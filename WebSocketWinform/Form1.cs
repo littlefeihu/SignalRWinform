@@ -28,8 +28,8 @@ namespace WebSocketWinform
 
                 this.Invoke((Action)(() =>
                 {
-                    Console.WriteLine("Receive Message: " + e.Data);
-                    toolStripStatusLabel1.Text = "Receive Message: " + e.Data;
+                    string s = "Receive Message: " + e.Data;
+                    ShowMsg(s);
                 }
    ));
             };
@@ -37,8 +37,8 @@ namespace WebSocketWinform
             {
                 this.Invoke((Action)(() =>
                 {
-                    Console.WriteLine("Connect Opened");
-                    toolStripStatusLabel1.Text = "Connect Opened";
+                    string s = "Connect Opened ";
+                    ShowMsg(s);
                 }
                ));
 
@@ -49,8 +49,8 @@ namespace WebSocketWinform
             {
                 this.Invoke((Action)(() =>
                 {
-                    Console.WriteLine("Error Happened: " + e.Message);
-                    toolStripStatusLabel1.Text = "Error Happened: " + e.Message;
+                    string s = "Error Happened: " + e.Message;
+                    ShowMsg(s);
                 }
 ));
 
@@ -59,9 +59,8 @@ namespace WebSocketWinform
             {
                 this.Invoke((Action)(() =>
                 {
-
-                    Console.WriteLine("Connect Closed: " + e.Reason);
-                    toolStripStatusLabel1.Text = "Connect Closed: " + e.Reason;
+                    string s = "Connect Closed: " + e.Reason;
+                    ShowMsg(s);
                 }
                     ));
             };
@@ -69,6 +68,13 @@ namespace WebSocketWinform
 
         }
 
+        private void ShowMsg(string s)
+        {
+            Console.WriteLine(s);
+            toolStripStatusLabel1.Text = s;
+
+            textBox2.Text = s;
+        }
         private void button1_Click(object sender, EventArgs e)
         {
             try
