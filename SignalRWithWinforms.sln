@@ -1,11 +1,19 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.27428.2037
+VisualStudioVersion = 15.0.27130.2027
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Server", "Server\Server.csproj", "{BE4E3255-A0ED-4CBA-B7E5-928122FDE18F}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Client", "Client\Client.csproj", "{372FBB48-9154-4011-96FB-C20CF5C3A590}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebSocketWinformClient", "WebSocketWinform\WebSocketWinformClient.csproj", "{5D4F8ADE-38C8-4760-AA4A-A6A1DE7CBF56}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SignalR", "SignalR", "{28E4743A-4E64-4930-9F9C-9AEE636F6BE3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WebSocket", "WebSocket", "{2390178D-66E6-4FA2-819D-1E49E1C73049}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebSocketServer", "WebSocketServer\WebSocketServer.csproj", "{0F8A88DE-E3CD-4A41-9E3B-F5A19AE9336C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,9 +29,23 @@ Global
 		{372FBB48-9154-4011-96FB-C20CF5C3A590}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{372FBB48-9154-4011-96FB-C20CF5C3A590}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{372FBB48-9154-4011-96FB-C20CF5C3A590}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5D4F8ADE-38C8-4760-AA4A-A6A1DE7CBF56}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5D4F8ADE-38C8-4760-AA4A-A6A1DE7CBF56}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5D4F8ADE-38C8-4760-AA4A-A6A1DE7CBF56}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5D4F8ADE-38C8-4760-AA4A-A6A1DE7CBF56}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0F8A88DE-E3CD-4A41-9E3B-F5A19AE9336C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0F8A88DE-E3CD-4A41-9E3B-F5A19AE9336C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0F8A88DE-E3CD-4A41-9E3B-F5A19AE9336C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0F8A88DE-E3CD-4A41-9E3B-F5A19AE9336C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{BE4E3255-A0ED-4CBA-B7E5-928122FDE18F} = {28E4743A-4E64-4930-9F9C-9AEE636F6BE3}
+		{372FBB48-9154-4011-96FB-C20CF5C3A590} = {28E4743A-4E64-4930-9F9C-9AEE636F6BE3}
+		{5D4F8ADE-38C8-4760-AA4A-A6A1DE7CBF56} = {2390178D-66E6-4FA2-819D-1E49E1C73049}
+		{0F8A88DE-E3CD-4A41-9E3B-F5A19AE9336C} = {2390178D-66E6-4FA2-819D-1E49E1C73049}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {2518068A-780C-4F12-BC37-2BD9F2B211A3}
